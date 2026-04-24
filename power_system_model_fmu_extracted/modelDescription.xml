@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<fmiModelDescription fmiVersion="2.0" generationDateAndTime="2025-06-10T11:03:43Z" generationTool="Simulink (R2024a)" guid="{18b12dbc-68ba-b20d-1347-5bbb532e3d54}" modelName="agc_9busSystem_noSecondaryCtrl" numberOfEventIndicators="0" variableNamingConvention="structured" version="15.3">
+  <CoSimulation canBeInstantiatedOnlyOncePerProcess="false" canGetAndSetFMUstate="false" canHandleVariableCommunicationStepSize="true" canNotUseMemoryManagementFunctions="true" canSerializeFMUstate="false" modelIdentifier="agc_9busSystem_noSecondaryCtrl"/>
+  <DefaultExperiment startTime="0" stepSize="1e-04" stopTime="20"/>
+  <VendorAnnotations>
+    <Tool name="Simulink Coder">
+    </Tool>
+  </VendorAnnotations>
+  <ModelVariables>
+    <ScalarVariable causality="input" description="V1_ref_delta" name="V1_ref_delta" valueReference="0" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 1-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="V2_ref_delta" name="V2_ref_delta" valueReference="1" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 2-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="V3_ref_delta" name="V3_ref_delta" valueReference="2" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 3-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="P1_set_inv" name="P1_set_inv" valueReference="3" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 4-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="P2_set_inv" name="P2_set_inv" valueReference="4" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 5-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="P3_set_inv" name="P3_set_inv" valueReference="5" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 6-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V1_ref_bs" initial="calculated" name="V1_ref_bs" valueReference="1000" variability="continuous">
+      <Real/>
+      <!--Index = 7-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V2_ref_bs" initial="calculated" name="V2_ref_bs" valueReference="1001" variability="continuous">
+      <Real/>
+      <!--Index = 8-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V3_ref_bs" initial="calculated" name="V3_ref_bs" valueReference="1002" variability="continuous">
+      <Real/>
+      <!--Index = 9-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="f1_bs" initial="calculated" name="f1_bs" valueReference="1003" variability="continuous">
+      <Real/>
+      <!--Index = 10-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="f2_bs" initial="calculated" name="f2_bs" valueReference="1004" variability="continuous">
+      <Real/>
+      <!--Index = 11-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="f3_bs" initial="calculated" name="f3_bs" valueReference="1005" variability="continuous">
+      <Real/>
+      <!--Index = 12-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="P1_bs" initial="calculated" name="P1_bs" valueReference="1006" variability="continuous">
+      <Real/>
+      <!--Index = 13-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="P2_bs" initial="calculated" name="P2_bs" valueReference="1007" variability="continuous">
+      <Real/>
+      <!--Index = 14-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="P3_bs" initial="calculated" name="P3_bs" valueReference="1008" variability="continuous">
+      <Real/>
+      <!--Index = 15-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="Q1_bs" initial="calculated" name="Q1_bs" valueReference="1009" variability="continuous">
+      <Real/>
+      <!--Index = 16-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="Q2_bs" initial="calculated" name="Q2_bs" valueReference="1010" variability="continuous">
+      <Real/>
+      <!--Index = 17-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="Q3_bs" initial="calculated" name="Q3_bs" valueReference="1011" variability="continuous">
+      <Real/>
+      <!--Index = 18-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="phasediff12" initial="calculated" name="phasediff12" valueReference="1012" variability="continuous">
+      <Real/>
+      <!--Index = 19-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="phasediff13" initial="calculated" name="phasediff13" valueReference="1013" variability="continuous">
+      <Real/>
+      <!--Index = 20-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="phasediff23" initial="calculated" name="phasediff23" valueReference="1014" variability="continuous">
+      <Real/>
+      <!--Index = 21-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="I1_bs" initial="calculated" name="I1_bs" valueReference="1015" variability="continuous">
+      <Real/>
+      <!--Index = 22-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="I2_bs" initial="calculated" name="I2_bs" valueReference="1016" variability="continuous">
+      <Real/>
+      <!--Index = 23-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="I3_bs" initial="calculated" name="I3_bs" valueReference="1017" variability="continuous">
+      <Real/>
+      <!--Index = 24-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V1_bs" initial="calculated" name="V1_bs" valueReference="1018" variability="continuous">
+      <Real/>
+      <!--Index = 25-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V2_bs" initial="calculated" name="V2_bs" valueReference="1019" variability="continuous">
+      <Real/>
+      <!--Index = 26-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V3_bs" initial="calculated" name="V3_bs" valueReference="1020" variability="continuous">
+      <Real/>
+      <!--Index = 27-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_a_bus1" initial="calculated" name="V_a_bus1" valueReference="1021" variability="continuous">
+      <Real/>
+      <!--Index = 28-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_b_bus1" initial="calculated" name="V_b_bus1" valueReference="1022" variability="continuous">
+      <Real/>
+      <!--Index = 29-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_c_bus1" initial="calculated" name="V_c_bus1" valueReference="1023" variability="continuous">
+      <Real/>
+      <!--Index = 30-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_a_bus2" initial="calculated" name="V_a_bus2" valueReference="1024" variability="continuous">
+      <Real/>
+      <!--Index = 31-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_b_bus2" initial="calculated" name="V_b_bus2" valueReference="1025" variability="continuous">
+      <Real/>
+      <!--Index = 32-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_c_bus2" initial="calculated" name="V_c_bus2" valueReference="1026" variability="continuous">
+      <Real/>
+      <!--Index = 33-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_a_bus3" initial="calculated" name="V_a_bus3" valueReference="1027" variability="continuous">
+      <Real/>
+      <!--Index = 34-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_b_bus3" initial="calculated" name="V_b_bus3" valueReference="1028" variability="continuous">
+      <Real/>
+      <!--Index = 35-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_c_bus3" initial="calculated" name="V_c_bus3" valueReference="1029" variability="continuous">
+      <Real/>
+      <!--Index = 36-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_a_bus4" initial="calculated" name="V_a_bus4" valueReference="1030" variability="continuous">
+      <Real/>
+      <!--Index = 37-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_b_bus4" initial="calculated" name="V_b_bus4" valueReference="1031" variability="continuous">
+      <Real/>
+      <!--Index = 38-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_c_bus4" initial="calculated" name="V_c_bus4" valueReference="1032" variability="continuous">
+      <Real/>
+      <!--Index = 39-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_a_bus5" initial="calculated" name="V_a_bus5" valueReference="1033" variability="continuous">
+      <Real/>
+      <!--Index = 40-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_b_bus5" initial="calculated" name="V_b_bus5" valueReference="1034" variability="continuous">
+      <Real/>
+      <!--Index = 41-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_c_bus5" initial="calculated" name="V_c_bus5" valueReference="1035" variability="continuous">
+      <Real/>
+      <!--Index = 42-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_a_bus6" initial="calculated" name="V_a_bus6" valueReference="1036" variability="continuous">
+      <Real/>
+      <!--Index = 43-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_b_bus6" initial="calculated" name="V_b_bus6" valueReference="1037" variability="continuous">
+      <Real/>
+      <!--Index = 44-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_c_bus6" initial="calculated" name="V_c_bus6" valueReference="1038" variability="continuous">
+      <Real/>
+      <!--Index = 45-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_a_bus7" initial="calculated" name="V_a_bus7" valueReference="1039" variability="continuous">
+      <Real/>
+      <!--Index = 46-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_b_bus7" initial="calculated" name="V_b_bus7" valueReference="1040" variability="continuous">
+      <Real/>
+      <!--Index = 47-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_c_bus7" initial="calculated" name="V_c_bus7" valueReference="1041" variability="continuous">
+      <Real/>
+      <!--Index = 48-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_a_bus8" initial="calculated" name="V_a_bus8" valueReference="1042" variability="continuous">
+      <Real/>
+      <!--Index = 49-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_b_bus8" initial="calculated" name="V_b_bus8" valueReference="1043" variability="continuous">
+      <Real/>
+      <!--Index = 50-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_c_bus8" initial="calculated" name="V_c_bus8" valueReference="1044" variability="continuous">
+      <Real/>
+      <!--Index = 51-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_a_bus9" initial="calculated" name="V_a_bus9" valueReference="1045" variability="continuous">
+      <Real/>
+      <!--Index = 52-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_b_bus9" initial="calculated" name="V_b_bus9" valueReference="1046" variability="continuous">
+      <Real/>
+      <!--Index = 53-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="V_c_bus9" initial="calculated" name="V_c_bus9" valueReference="1047" variability="continuous">
+      <Real/>
+      <!--Index = 54-->
+    </ScalarVariable>
+    <ScalarVariable causality="independent" description="time" name="time" valueReference="2000" variability="continuous">
+      <Real/>
+      <!--Index = 55-->
+    </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Outputs>
+      <Unknown index="7"/>
+      <Unknown index="8"/>
+      <Unknown index="9"/>
+      <Unknown index="10"/>
+      <Unknown index="11"/>
+      <Unknown index="12"/>
+      <Unknown index="13"/>
+      <Unknown index="14"/>
+      <Unknown index="15"/>
+      <Unknown index="16"/>
+      <Unknown index="17"/>
+      <Unknown index="18"/>
+      <Unknown index="19"/>
+      <Unknown index="20"/>
+      <Unknown index="21"/>
+      <Unknown index="22"/>
+      <Unknown index="23"/>
+      <Unknown index="24"/>
+      <Unknown index="25"/>
+      <Unknown index="26"/>
+      <Unknown index="27"/>
+      <Unknown index="28"/>
+      <Unknown index="29"/>
+      <Unknown index="30"/>
+      <Unknown index="31"/>
+      <Unknown index="32"/>
+      <Unknown index="33"/>
+      <Unknown index="34"/>
+      <Unknown index="35"/>
+      <Unknown index="36"/>
+      <Unknown index="37"/>
+      <Unknown index="38"/>
+      <Unknown index="39"/>
+      <Unknown index="40"/>
+      <Unknown index="41"/>
+      <Unknown index="42"/>
+      <Unknown index="43"/>
+      <Unknown index="44"/>
+      <Unknown index="45"/>
+      <Unknown index="46"/>
+      <Unknown index="47"/>
+      <Unknown index="48"/>
+      <Unknown index="49"/>
+      <Unknown index="50"/>
+      <Unknown index="51"/>
+      <Unknown index="52"/>
+      <Unknown index="53"/>
+      <Unknown index="54"/>
+    </Outputs>
+    <InitialUnknowns>
+      <Unknown index="7"/>
+      <Unknown index="8"/>
+      <Unknown index="9"/>
+      <Unknown index="10"/>
+      <Unknown index="11"/>
+      <Unknown index="12"/>
+      <Unknown index="13"/>
+      <Unknown index="14"/>
+      <Unknown index="15"/>
+      <Unknown index="16"/>
+      <Unknown index="17"/>
+      <Unknown index="18"/>
+      <Unknown index="19"/>
+      <Unknown index="20"/>
+      <Unknown index="21"/>
+      <Unknown index="22"/>
+      <Unknown index="23"/>
+      <Unknown index="24"/>
+      <Unknown index="25"/>
+      <Unknown index="26"/>
+      <Unknown index="27"/>
+      <Unknown index="28"/>
+      <Unknown index="29"/>
+      <Unknown index="30"/>
+      <Unknown index="31"/>
+      <Unknown index="32"/>
+      <Unknown index="33"/>
+      <Unknown index="34"/>
+      <Unknown index="35"/>
+      <Unknown index="36"/>
+      <Unknown index="37"/>
+      <Unknown index="38"/>
+      <Unknown index="39"/>
+      <Unknown index="40"/>
+      <Unknown index="41"/>
+      <Unknown index="42"/>
+      <Unknown index="43"/>
+      <Unknown index="44"/>
+      <Unknown index="45"/>
+      <Unknown index="46"/>
+      <Unknown index="47"/>
+      <Unknown index="48"/>
+      <Unknown index="49"/>
+      <Unknown index="50"/>
+      <Unknown index="51"/>
+      <Unknown index="52"/>
+      <Unknown index="53"/>
+      <Unknown index="54"/>
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>

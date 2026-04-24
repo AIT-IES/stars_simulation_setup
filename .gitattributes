@@ -1,0 +1,8 @@
+**/*.sh   eol=lf
+**/*.cc   eol=lf
+**/*.h   eol=lf
+**/*.properties   eol=lf
+**/*.so   eol=lf
+**/*.xml   eol=lf
+**/*.txt   eol=lf
+**/*.md   eol=lf
